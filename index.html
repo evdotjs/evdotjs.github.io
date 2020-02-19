@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
@@ -11,12 +13,32 @@
       <h1>Hello World!</h1>
     </header>
     <main>
-      <h3>My Projects<h3>
-      <ul>
-        <li><a href="https://evdotjs.github.io/my-projects/google-homepage/">Google Homepage<a></li>
-        <li><a href="https://evdotjs.github.io/my-projects/firefox-browser/">Firefox Browser<a></li>
-        <li><a href="https://evdotjs.github.io/my-projects/calculator/">Calculator<a></li>
-      </ul>
+      <section class="card-deck">
+        <article class="card">
+          <a href="https://evdotjs.github.io/my-projects/google-homepage/" target="_blank" title="view in browser"><img src="img/google-homepage.png" class="card-img-top" alt="google-homepage"></a>
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://evdotjs.github.io/my-projects/google-homepage/" target="_blank" title="view in browser">Google Homepage</a></h5>
+            <p class="card-text">a recreation of Google’s homepage using HTML and CSS</p>
+            <a href="https://github.com/evdotjs/my-projects/tree/gh-pages/google-homepage" target="_blank" title="view github repository"><small>code</small></a>
+          </div>
+        </article>
+        <article class="card">
+          <a href="https://evdotjs.github.io/my-projects/firefox-browser/" target="_blank" title="view in browser"><img src="img/firefox-browser.png" class="card-img-top" alt="firefox-browser"></a>
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://evdotjs.github.io/my-projects/firefox-browser/" target="_blank" title="view in browser">Firefox Browser</a></h5>
+            <p class="card-text">a recreation of the Mozilla Firefox download page using HTML and SASS</p>
+            <a href="https://github.com/evdotjs/my-projects/tree/gh-pages/firefox-browser" target="_blank" title="view github repository"><small>code</small></a>
+          </div>
+        </article>
+        <article class="card">
+          <a href="https://evdotjs.github.io/my-projects/calculator/" target="_blank" title="view in browser"><img src="img/calculator.png" class="card-img-top" alt="calculator"></a>
+          <div class="card-body">
+            <h5 class="card-title"><a href="https://evdotjs.github.io/my-projects/calculator/" target="_blank" title="view in browser">Calculator</a></h5>
+            <p class="card-text">a simple calculator using HTML, SASS, and Javascript</p>
+            <a href="https://github.com/evdotjs/my-projects/tree/gh-pages/calculator" target="_blank" title="view github repository"><small>code</small></a>
+          </div>
+        </article>
+      </section>
     </main>
   </body>
 </html>

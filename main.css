@@ -1,46 +1,57 @@
 body {
-  font-family: monospace;
-  color: #3EC2CF;
-  font-size: 1.333em;
+  font-family: "Archivo", sans-serif;
+  color: #3ec3cf;
 }
 
 header {
   color: #fff;
-  background-color: #3EC2CF;
-  /* box-shadow: 0 1px 3px rgba(0,0,0,0.2); */
+  background-color: #3ec3cf;
+  padding: 1em 0 0.5em 1em;
 }
 
 h1 {
-  margin: 0;
-  padding: 0.5em;
+  font-weight: bold;
+  font-style: italic;
 }
 
 main {
   width: 90%;
   margin: auto;
+  margin-top: 1em;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin-left: 1em;
+.card {
+  border-color: #3ec3cf;
 }
 
-li {
-  margin: .5em 0;
-}
-
-li::before {
-  content: "+  ";
+.card-title {
+  font-weight: bold;
 }
 
 a {
-  color: #3EC2CF;
+  color: #3ec3cf;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #3ec3cf;
+  color: #fff;
+  text-decoration: none;
+}
+a small {
+  text-decoration: underline;
+}
+
+h5 a:hover {
   text-decoration: none;
 }
 
-a:hover {
-  background-color: #3EC2CF;
-  color: #fff;
-  /* text-decoration: underline; */
+.btn-outline-primary {
+  color: #3ec3cf;
+  border-color: #3ec3cf;
 }
+.btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled):active {
+  border-color: #3ec3cf;
+  background-color: #3ec3cf;
+}
+
+/*# sourceMappingURL=main.css.map */

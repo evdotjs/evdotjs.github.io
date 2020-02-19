@@ -1,0 +1,64 @@
+//VARIABLES
+$main-color: #3ec3cf;
+
+
+//STYLES
+body {
+  font-family: 'Archivo', sans-serif;
+  color: $main-color;
+}
+
+header {
+  color: #fff;
+  background-color: $main-color;
+  padding: 1em 0 .5em 1em;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.card {
+  border-color: $main-color;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+  &:hover {
+    background-color: $main-color;
+    color: #fff;
+    text-decoration: none;
+  }
+  small {
+    text-decoration: underline;
+  }
+
+}
+
+h5 a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-outline-primary {
+  color: $main-color;
+  border-color: $main-color;
+  &:hover,
+  &:not(:disabled):not(.disabled):active {
+    border-color: $main-color;
+    background-color: $main-color;
+  }
+}

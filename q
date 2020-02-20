@@ -1,0 +1,148 @@
+[1mdiff --git a/main.css b/main.css[m
+[1mindex ed58060..b59b1be 100644[m
+[1m--- a/main.css[m
+[1m+++ b/main.css[m
+[36m@@ -1,62 +1,62 @@[m
+[31m-::selection {[m
+[31m-  background-color: #c4c4c4;[m
+[31m-  color: #fff; }[m
+[31m-[m
+[31m-body {[m
+[31m-  font-family: 'Archivo', sans-serif;[m
+[31m-  color: #3ec3cf; }[m
+[31m-[m
+[31m-.jumbotron {[m
+[31m-  color: #fff;[m
+[31m-  background-color: #3ec3cf; }[m
+[31m-  .jumbotron h1 {[m
+[31m-    font-weight: bold;[m
+[31m-    font-style: italic; }[m
+[31m-  .jumbotron .header-text {[m
+[31m-    width: 90%;[m
+[31m-    margin: auto; }[m
+[31m-[m
+[31m-main {[m
+[31m-  width: 90%;[m
+[31m-  margin: auto; }[m
+[31m-  main h3 {[m
+[31m-    font-weight: bold;[m
+[31m-    font-style: italic; }[m
+[31m-[m
+[31m-.card-deck {[m
+[31m-  margin-top: 2em; }[m
+[31m-[m
+[31m-.card {[m
+[31m-  border-color: #3ec3cf; }[m
+[31m-[m
+[31m-.card-title {[m
+[31m-  font-weight: bold; }[m
+[31m-[m
+[31m-a {[m
+[31m-  color: #3ec3cf;[m
+[31m-  text-decoration: none; }[m
+[31m-  a:hover {[m
+[31m-    background-color: #3ec3cf;[m
+[31m-    color: #fff;[m
+[31m-    text-decoration: none; }[m
+[31m-[m
+[31m-.btn {[m
+[31m-  color: #3ec3cf;[m
+[31m-  background-color: #fff;[m
+[31m-  border: 1px solid #3ec3cf;[m
+[31m-  right: 0; }[m
+[31m-  .btn:hover {[m
+[31m-    background-color: #3ec3cf;[m
+[31m-    color: #fff; }[m
+[31m-[m
+[31m-.btn-outline-primary {[m
+[31m-  color: #3ec3cf;[m
+[31m-  border-color: #3ec3cf; }[m
+[31m-  .btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled):active {[m
+[31m-    border-color: #3ec3cf;[m
+[31m-    background-color: #3ec3cf; }[m
+[31m-[m
+[31m-footer {[m
+[31m-  display: flex; }[m
+[31m-[m
+[31m-/*# sourceMappingURL=main.css.map */[m
+[32m+[m[32m::selection {[m[41m[m
+[32m+[m[32m  background-color: #c4c4c4;[m[41m[m
+[32m+[m[32m  color: #fff; }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mbody {[m[41m[m
+[32m+[m[32m  font-family: 'Archivo', sans-serif;[m[41m[m
+[32m+[m[32m  color: #3ec3cf; }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m.jumbotron {[m[41m[m
+[32m+[m[32m  color: #fff;[m[41m[m
+[32m+[m[32m  background-color: #3ec3cf; }[m[41m[m
+[32m+[m[32m  .jumbotron h1 {[m[41m[m
+[32m+[m[32m    font-weight: bold;[m[41m[m
+[32m+[m[32m    font-style: italic; }[m[41m[m
+[32m+[m[32m  .jumbotron .header-text {[m[41m[m
+[32m+[m[32m    width: 90%;[m[41m[m
+[32m+[m[32m    margin: auto; }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mmain {[m[41m[m
+[32m+[m[32m  width: 90%;[m[41m[m
+[32m+[m[32m  margin: auto; }[m[41m[m
+[32m+[m[32m  main h3 {[m[41m[m
+[32m+[m[32m    font-weight: bold;[m[41m[m
+[32m+[m[32m    font-style: italic; }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m.card-deck {[m[41m[m
+[32m+[m[32m  margin-top: 2em; }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m.card {[m[41m[m
+[32m+[m[32m  border-color: #3ec3cf; }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m.card-title {[m[41m[m
+[32m+[m[32m  font-weight: bold; }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32ma {[m[41m[m
+[32m+[m[32m  color: #3ec3cf;[m[41m[m
+[32m+[m[32m  text-decoration: none; }[m[41m[m
+[32m+[m[32m  a:hover {[m[41m[m
+[32m+[m[32m    background-color: #3ec3cf;[m[41m[m
+[32m+[m[32m    color: #fff;[m[41m[m
+[32m+[m[32m    text-decoration: none; }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m.btn {[m[41m[m
+[32m+[m[32m  color: #3ec3cf;[m[41m[m
+[32m+[m[32m  background-color: #fff;[m[41m[m
+[32m+[m[32m  border: 1px solid #3ec3cf;[m[41m[m
+[32m+[m[32m  right: 0; }[m[41m[m
+[32m+[m[32m  .btn:hover {[m[41m[m
+[32m+[m[32m    background-color: #3ec3cf;[m[41m[m
+[32m+[m[32m    color: #fff; }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m.btn-outline-primary {[m[41m[m
+[32m+[m[32m  color: #3ec3cf;[m[41m[m
+[32m+[m[32m  border-color: #3ec3cf; }[m[41m[m
+[32m+[m[32m  .btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled):active {[m[41m[m
+[32m+[m[32m    border-color: #3ec3cf;[m[41m[m
+[32m+[m[32m    background-color: #3ec3cf; }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32mfooter {[m[41m[m
+[32m+[m[32m  display: flex; }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m/*# sourceMappingURL=main.css.map */[m[41m[m
+[1mdiff --git a/main.css.map b/main.css.map[m
+[1mindex d5b36af..a1ef137 100644[m
+[1m--- a/main.css.map[m
+[1m+++ b/main.css.map[m
+[36m@@ -1,7 +1,7 @@[m
+[31m-{[m
+[31m-"version": 3,[m
+[31m-"mappings": "AAKA,WAAY;EACR,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,IAAI;;AAGf,IAAK;EACH,WAAW,EAAE,qBAAqB;EAClC,KAAK,EAXM,OAAO;;AAcpB,UAAW;EACT,KAAK,EAAE,IAAI;EACX,gBAAgB,EAhBL,OAAO;EAiBlB,aAAG;IACD,WAAW,EAAE,IAAI;IACjB,UAAU,EAAE,MAAM;EAEpB,uBAAa;IACX,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,IAAI;;AAIhB,IAAK;EACH,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;EACZ,OAAG;IACD,WAAW,EAAE,IAAI;IACjB,UAAU,EAAE,MAAM;;AAItB,UAAW;EACT,UAAU,EAAE,GAAG;;AAGjB,KAAM;EACJ,YAAY,EAzCD,OAAO;;AA4CpB,WAAY;EACV,WAAW,EAAE,IAAI;;AAGnB,CAAE;EACA,KAAK,EAjDM,OAAO;EAkDlB,eAAe,EAAE,IAAI;EACrB,OAAQ;IACN,gBAAgB,EApDP,OAAO;IAqDhB,KAAK,EAAE,IAAI;IACX,eAAe,EAAE,IAAI;;AAIzB,IAAK;EACH,KAAK,EA3DM,OAAO;EA4DlB,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,iBAAqB;EAC7B,KAAK,EAAE,CAAC;EACR,UAAQ;IACN,gBAAgB,EAhEP,OAAO;IAiEhB,KAAK,EAAE,IAAI;;AAIf,oBAAqB;EACnB,KAAK,EAtEM,OAAO;EAuElB,YAAY,EAvED,OAAO;EAwElB,qFACuC;IACrC,YAAY,EA1EH,OAAO;IA2EhB,gBAAgB,EA3EP,OAAO;;AA+EpB,MAAO;EACL,OAAO,EAAE,IAAI",[m
+[31m-"sources": ["main.scss"],[m
+[31m-"names": [],[m
+[31m-"file": "main.css"[m
+[31m-}[m
+[32m+[m[32m{[m[41m[m
+[32m+[m[32m"version": 3,[m[41m[m
+[32m+[m[32m"mappings": "AAKA,WAAY;EACR,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,IAAI;;AAGf,IAAK;EACH,WAAW,EAAE,qBAAqB;EAClC,KAAK,EAXM,OAAO;;AAcpB,UAAW;EACT,KAAK,EAAE,IAAI;EACX,gBAAgB,EAhBL,OAAO;EAiBlB,aAAG;IACD,WAAW,EAAE,IAAI;IACjB,UAAU,EAAE,MAAM;EAEpB,uBAAa;IACX,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,IAAI;;AAIhB,IAAK;EACH,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;EACZ,OAAG;IACD,WAAW,EAAE,IAAI;IACjB,UAAU,EAAE,MAAM;;AAItB,UAAW;EACT,UAAU,EAAE,GAAG;;AAGjB,KAAM;EACJ,YAAY,EAzCD,OAAO;;AA4CpB,WAAY;EACV,WAAW,EAAE,IAAI;;AAGnB,CAAE;EACA,KAAK,EAjDM,OAAO;EAkDlB,eAAe,EAAE,IAAI;EACrB,OAAQ;IACN,gBAAgB,EApDP,OAAO;IAqDhB,KAAK,EAAE,IAAI;IACX,eAAe,EAAE,IAAI;;AAIzB,IAAK;EACH,KAAK,EA3DM,OAAO;EA4DlB,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,iBAAqB;EAC7B,KAAK,EAAE,CAAC;EACR,UAAQ;IACN,gBAAgB,EAhEP,OAAO;IAiEhB,KAAK,EAAE,IAAI;;AAIf,oBAAqB;EACnB,KAAK,EAtEM,OAAO;EAuElB,YAAY,EAvED,OAAO;EAwElB,qFACuC;IACrC,YAAY,EA1EH,OAAO;IA2EhB,gBAAgB,EA3EP,OAAO;;AA+EpB,MAAO;EACL,OAAO,EAAE,IAAI",[m[41m[m
+[32m+[m[32m"sources": ["main.scss"],[m[41m[m
+[32m+[m[32m"names": [],[m[41m[m
+[32m+[m[32m"file": "main.css"[m[41m[m
+[32m+[m[32m}[m[41m[m

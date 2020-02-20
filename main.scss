@@ -3,26 +3,40 @@ $main-color: #3ec3cf;
 
 
 //STYLES
+::selection {
+    background-color: #c4c4c4;
+    color: #fff;
+}
+
 body {
   font-family: 'Archivo', sans-serif;
   color: $main-color;
 }
 
-header {
+.jumbotron {
   color: #fff;
   background-color: $main-color;
-  padding: 1em 0 .5em 1em;
-}
-
-h1 {
-  font-weight: bold;
-  font-style: italic;
+  h1 {
+    font-weight: bold;
+    font-style: italic;
+  }
+  .header-text {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 main {
   width: 90%;
   margin: auto;
-  margin-top: 1em;
+  h3 {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+.card-deck {
+  margin-top: 2em;
 }
 
 .card {
@@ -41,15 +55,16 @@ a {
     color: #fff;
     text-decoration: none;
   }
-  small {
-    text-decoration: underline;
-  }
-
 }
 
-h5 a {
+.btn {
+  color: $main-color;
+  background-color: #fff;
+  border: 1px solid $main-color;
+  right: 0;
   &:hover {
-    text-decoration: none;
+    background-color: $main-color;
+    color: #fff;
   }
 }
 
@@ -61,4 +76,8 @@ h5 a {
     border-color: $main-color;
     background-color: $main-color;
   }
+}
+
+footer {
+  display: flex;
 }

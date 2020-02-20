@@ -1,57 +1,62 @@
+::selection {
+  background-color: #c4c4c4;
+  color: #fff; }
+
 body {
-  font-family: "Archivo", sans-serif;
-  color: #3ec3cf;
-}
+  font-family: 'Archivo', sans-serif;
+  color: #3ec3cf; }
 
-header {
+.jumbotron {
   color: #fff;
-  background-color: #3ec3cf;
-  padding: 1em 0 0.5em 1em;
-}
-
-h1 {
-  font-weight: bold;
-  font-style: italic;
-}
+  background-color: #3ec3cf; }
+  .jumbotron h1 {
+    font-weight: bold;
+    font-style: italic; }
+  .jumbotron .header-text {
+    width: 90%;
+    margin: auto; }
 
 main {
   width: 90%;
-  margin: auto;
-  margin-top: 1em;
-}
+  margin: auto; }
+  main h3 {
+    font-weight: bold;
+    font-style: italic; }
+
+.card-deck {
+  margin-top: 2em; }
 
 .card {
-  border-color: #3ec3cf;
-}
+  border-color: #3ec3cf; }
 
 .card-title {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 a {
   color: #3ec3cf;
-  text-decoration: none;
-}
-a:hover {
-  background-color: #3ec3cf;
-  color: #fff;
-  text-decoration: none;
-}
-a small {
-  text-decoration: underline;
-}
+  text-decoration: none; }
+  a:hover {
+    background-color: #3ec3cf;
+    color: #fff;
+    text-decoration: none; }
 
-h5 a:hover {
-  text-decoration: none;
-}
+.btn {
+  color: #3ec3cf;
+  background-color: #fff;
+  border: 1px solid #3ec3cf;
+  right: 0; }
+  .btn:hover {
+    background-color: #3ec3cf;
+    color: #fff; }
 
 .btn-outline-primary {
   color: #3ec3cf;
-  border-color: #3ec3cf;
-}
-.btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled):active {
-  border-color: #3ec3cf;
-  background-color: #3ec3cf;
-}
+  border-color: #3ec3cf; }
+  .btn-outline-primary:hover, .btn-outline-primary:not(:disabled):not(.disabled):active {
+    border-color: #3ec3cf;
+    background-color: #3ec3cf; }
+
+footer {
+  display: flex; }
 
 /*# sourceMappingURL=main.css.map */

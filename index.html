@@ -16,35 +16,21 @@
       </section>
     </header>
     <main>
-      <h3>My Projects</h3>
+      <h3>{{title}}</h3>
       <section class="card-deck">
-        <article class="card">
-          <a href="https://evdotjs.github.io/my-projects/google-homepage/" target="_blank" title="view in browser"><img src="img/google-homepage.png" class="card-img-top" alt="google-homepage"></a>
+        <article v-for="project in projects" class="card">
+          <a v-bind:href="project.link" target="_blank" title="view in browser"><img v-bind:src="project.thumbnail" class="card-img-top" v-bind:alt="project.alt"></a>
           <div class="card-body">
-            <h5 class="card-title"><a href="https://evdotjs.github.io/my-projects/google-homepage/" target="_blank" title="view in browser">Google Homepage</a></h5>
-            <p class="card-text">a recreation of Google’s homepage using HTML and CSS</p>
-            <a href="https://github.com/evdotjs/my-projects/tree/gh-pages/google-homepage" target="_blank" title="view github repository" class="btn">code</a>
-          </div>
-        </article>
-        <article class="card">
-          <a href="https://evdotjs.github.io/my-projects/firefox-browser/" target="_blank" title="view in browser"><img src="img/firefox-browser.png" class="card-img-top" alt="firefox-browser"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a href="https://evdotjs.github.io/my-projects/firefox-browser/" target="_blank" title="view in browser">Firefox Browser</a></h5>
-            <p class="card-text">a recreation of the Mozilla Firefox download page using HTML and SASS</p>
-            <a href="https://github.com/evdotjs/my-projects/tree/gh-pages/firefox-browser" target="_blank" title="view github repository" class="btn">code</a>
-          </div>
-        </article>
-        <article class="card">
-          <a href="https://evdotjs.github.io/my-projects/calculator/" target="_blank" title="view in browser"><img src="img/calculator.png" class="card-img-top" alt="calculator"></a>
-          <div class="card-body">
-            <h5 class="card-title"><a href="https://evdotjs.github.io/my-projects/calculator/" target="_blank" title="view in browser">Calculator</a></h5>
-            <p class="card-text">a simple calculator using HTML, SASS, and Javascript</p>
-            <a href="https://github.com/evdotjs/my-projects/tree/gh-pages/calculator" target="_blank" title="view github repository" class="btn">code</a>
+            <h5 class="card-title">{{project.title}}</h5>
+            <p class="card-text">{{project.description}}</p>
+            <a v-bind:href="project.repository" target="_blank" title="view github repository" class="btn">code</a>
           </div>
         </article>
       </section>
     </main>
     <footer>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -37,10 +37,15 @@ main {
 
 .card-deck {
   margin-top: 2em;
-}
-
-.card {
-  border-color: $main-color;
+  display: grid;
+  .card {
+    border-color: $main-color;
+    margin: 1em;
+  }
+  @media screen and (min-width: 760px) {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-auto-flow: row;
+  }
 }
 
 .card-title {
@@ -76,8 +81,4 @@ a {
     border-color: $main-color;
     background-color: $main-color;
   }
-}
-
-footer {
-  display: flex;
 }

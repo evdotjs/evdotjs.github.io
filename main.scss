@@ -1,5 +1,5 @@
 //VARIABLES
-$main-color: #3ec3cf;
+$main-color: #3ec2cf;
 
 
 //STYLES
@@ -62,23 +62,20 @@ a {
   }
 }
 
-.btn {
+.btn-outline-secondary {
   color: $main-color;
   background-color: #fff;
   border: 1px solid $main-color;
   right: 0;
   &:hover {
     background-color: $main-color;
+    border-color: $main-color;
     color: #fff;
   }
 }
 
-.btn-outline-primary {
-  color: $main-color;
+.show > .btn-outline-secondary.dropdown-toggle {
+  background-color: $main-color;
+  color: #fff;
   border-color: $main-color;
-  &:hover,
-  &:not(:disabled):not(.disabled):active {
-    border-color: $main-color;
-    background-color: $main-color;
-  }
 }

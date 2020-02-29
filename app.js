@@ -25,7 +25,7 @@ const projectList = [
   },
   {
           title: 'To-Do List',
-    description: 'a to-do list app using HTML, SASS, and Vue.',
+    description: 'a to-do list app using HTML, SASS, and Vue.js',
            link: 'https://evdotjs.github.io/my-projects/todo-list/',
      repository: 'https://github.com/evdotjs/my-projects/tree/gh-pages/todo-list',
       thumbnail: 'img/todo-list-v2.png',

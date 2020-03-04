@@ -9,7 +9,7 @@ const projectList = [
   },
   {
           title: 'Firefox Browser',
-    description: 'a recreation of the Mozilla Firefox download page',
+    description: 'a recreation of the Mozilla Firefox download page using HTML and CSS',
            link: 'https://evdotjs.github.io/my-projects/firefox-browser/',
      repository: 'https://github.com/evdotjs/my-projects/tree/gh-pages/firefox-browser',
       thumbnail: 'img/firefox-browser.png',
@@ -28,7 +28,7 @@ const projectList = [
     description: 'a to-do list app using HTML, SASS, and Vue.js',
            link: 'https://evdotjs.github.io/my-projects/todo-list/',
      repository: 'https://github.com/evdotjs/my-projects/tree/gh-pages/todo-list',
-      thumbnail: 'img/todo-list-v2.png',
+      thumbnail: 'img/todo-list-v3-day.png',
             alt: 'todo-list'
   }
 ];

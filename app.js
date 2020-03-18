@@ -30,7 +30,15 @@ const projectList = [
      repository: 'https://github.com/evdotjs/my-projects/tree/gh-pages/todo-list',
       thumbnail: 'img/todo-list-v3-day.png',
             alt: 'todo-list'
-  }
+  },
+  {
+          title: 'frontendmentor.io solutions',
+    description: 'My solutions to some of the coding challenges on frontendmentor.io',
+           link: 'https://evdotjs.github.io/frontendmentor/',
+     repository: 'https://github.com/evdotjs/frontendmentor',
+      thumbnail: 'img/frontendmentor-1.jpg',
+            alt: 'four-card-feature-section screenshot'
+  },
 ];
 
 new Vue({

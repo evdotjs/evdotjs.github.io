@@ -1,37 +1,74 @@
 //VARIABLES
-$main-color: #3ec2cf;
+$main-color: #3d9af9;
 
 
 //STYLES
 ::selection {
-    background-color: #c4c4c4;
+    background-color: rgba(0,0,0,0.3);
     color: #fff;
 }
 
 body {
-  font-family: 'Archivo', sans-serif;
-  color: $main-color;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #fff;
+  height: 100vh;
+  text-align: center;
   background-color: $main-color;
+  background-image: url('img/topography.svg');
+  background-attachment: fixed;
   h1 {
+    color: rgba(255,255,255,1);
     font-weight: bold;
-    font-style: italic;
+    font-size: 15vw;
+    @media screen and (min-width: 600px) { font-size: 10vw; }
+    @media screen and (min-width: 800px) { font-size: 5vw; }
   }
   .header-text {
     width: 90%;
     margin: auto;
+    color: rgba(0,0,0,0.7);
+  }
+  .lead {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 5vw;
+    margin-bottom: 0;
+    @media screen and (min-width: 800px) { font-size: 2vw; }
+  }
+  .contact {
+    padding: 0;
+    display: inline-flex;
+    list-style-type: none;
+    li {
+      padding: 2em;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.7;
+      transition-property: opacity;
+      transition-duration: 300ms;
+      &:hover { opacity: 1; }
+    }
+    #linkedin { background-image: url('img/icon-linkedin.svg'); }
+    #github { background-image: url('img/icon-github.svg'); }
+    #email { background-image: url('img/icon-email.svg'); }
   }
 }
 
 main {
   width: 90%;
   margin: auto;
+  color: $main-color;
   h3 {
     font-weight: bold;
-    font-style: italic;
+    text-align: center;
+    font-size: 2em;
   }
 }
 

@@ -13,15 +13,16 @@
       <section class="header-text">
         <h1>Ev McNeal</h1>
         <p class="lead">Frontend Web Developer & Designer</p>
-        <ul  class="contact">
+        <ul class="contact">
           <a href="https://www.linkedin.com/in/ev-m-9242531a4/" target="_blank"><li id="linkedin" title="LinkedIn"></li></a>
           <a href="https://github.com/evdotjs" target="_blank"><li id="github" title="GitHub"></li></a>
           <a href="mailto:esmcneal@ucdavis.edu"><li id="email" title="E-Mail"></li></a>
         </ul>
       </section>
+      <a href="#projects" id="down-arrow"></a>
     </header>
     <main>
-      <h3>{{title}}</h3>
+      <h3 id="projects">{{title}}</h3>
       <section class="card-deck">
         <article v-for="project in projects" class="card">
           <a v-bind:href="project.link" target="_blank" title="view in browser"><img v-bind:src="project.thumbnail" class="card-img-top" v-bind:alt="project.alt"></a>

@@ -1,12 +1,23 @@
 //VARIABLES
 $main-color: #3d9af9;
 
+%header-icons {
+  padding: 2em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  &:hover { opacity: 1; }
+}
 
 //STYLES
 ::selection {
     background-color: rgba(0,0,0,0.3);
     color: #fff;
 }
+
+html {scroll-behavior: smooth;}
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -22,6 +33,7 @@ body {
   background-color: $main-color;
   background-image: url('img/topography.svg');
   background-attachment: fixed;
+  padding-bottom: 1em;
   h1 {
     color: rgba(255,255,255,1);
     font-weight: bold;
@@ -46,18 +58,20 @@ body {
     display: inline-flex;
     list-style-type: none;
     li {
-      padding: 2em;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+      @extend %header-icons;
       opacity: 0.7;
-      transition-property: opacity;
-      transition-duration: 300ms;
-      &:hover { opacity: 1; }
     }
     #linkedin { background-image: url('img/icon-linkedin.svg'); }
     #github { background-image: url('img/icon-github.svg'); }
     #email { background-image: url('img/icon-email.svg'); }
+  }
+  #down-arrow {
+    @extend %header-icons;
+    background-image: url('img/icon-down-arrow.svg');
+    opacity: 0.3;
+    display: block;
+    width: min-content;
+    margin: 0 auto;
   }
 }
 

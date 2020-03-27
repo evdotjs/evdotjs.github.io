@@ -19,31 +19,62 @@
           <a href="mailto:esmcneal@ucdavis.edu"><li id="email" title="E-Mail"></li></a>
         </ul>
       </section>
-      <a href="#projects" id="down-arrow"></a>
+      <a href="#featured" id="down-arrow"></a>
     </header>
     <main>
-      <h3 id="projects">{{title}}</h3>
-      <section class="card-deck">
-        <article v-for="project in projects" class="card">
-          <a v-bind:href="project.link" target="_blank" title="view in browser"><img v-bind:src="project.thumbnail" class="card-img-top" v-bind:alt="project.alt"></a>
-          <div class="card-body">
-            <h5 class="card-title">{{project.title}}</h5>
-            <p class="card-text">{{project.description}}</p>
-            <div class="dropdown">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                View
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <a v-bind:href="project.link" target="_blank" class="dropdown-item">in browser</a>
-                <a v-bind:href="project.repository" target="_blank" class="dropdown-item">on GitHub</a>
-              </div>
+      <section id="featured">
+        <h3>Featured Project</h3>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/frontendmentor-1.jpg" class="d-block w-100" alt="four card feature section">
+            </div>
+            <div class="carousel-item">
+              <img src="img/frontendmentor-2.jpg" class="d-block w-100" alt="base apparel">
             </div>
           </div>
-        </article>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          </ol>
+        </div>
       </section>
+
+      <section id="projects">
+        <h3>More Projects</h3>
+        <div class="card-deck">
+          <!-- card -->
+          <article v-for="project in projects" class="card">
+            <a v-bind:href="project.link" target="_blank" title="view in browser"><img v-bind:src="project.thumbnail" class="card-img-top" v-bind:alt="project.alt"></a>
+            <div class="card-body">
+              <h5 class="card-title">{{project.title}}</h5>
+              <p class="card-text">{{project.description}}</p>
+
+              <!-- dropdown -->
+              <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  View
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <a v-bind:href="project.link" target="_blank" class="dropdown-item">in browser</a>
+                  <a v-bind:href="project.repository" target="_blank" class="dropdown-item">on GitHub</a>
+                </div>
+              </div>
+              <!-- dropdown -->
+
+            </div>
+          </article>
+          <!-- card -->
+        </div>
+      </section>
+
     </main>
     <footer>
     </footer>
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

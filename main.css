@@ -34,6 +34,7 @@ body {
   background-image: url("img/topography.svg");
   background-attachment: fixed;
   padding-bottom: 1em;
+  margin-bottom: 0;
 }
 .jumbotron h1 {
   color: white;
@@ -92,19 +93,40 @@ body {
 }
 
 main {
-  width: 90%;
   margin: auto;
   color: #3d9af9;
+  display: grid;
 }
-main h3 {
+main section {
+  padding: 3em 0;
+}
+
+h3 {
   font-weight: bold;
   text-align: center;
   font-size: 2em;
+  margin-bottom: 1em;
+}
+
+#featured {
+  height: 50vh;
+  background-color: rgba(61, 154, 249, 0.1);
+}
+@media screen and (min-width: 800px) {
+  #featured {
+    height: 75vh;
+  }
+}
+
+#projects {
+  padding-bottom: 0;
 }
 
 .card-deck {
+  width: 90%;
   margin-top: 2em;
   display: grid;
+  margin: auto;
 }
 .card-deck .card {
   border-color: #3d9af9;
@@ -116,37 +138,61 @@ main h3 {
     grid-auto-flow: row;
   }
 }
-
-.card-title {
+.card-deck .card-title {
   font-weight: bold;
 }
-
-a {
+.card-deck a {
   color: #3d9af9;
   text-decoration: none;
 }
-a:hover {
+.card-deck a:hover {
   background-color: #3d9af9;
   color: #fff;
   text-decoration: none;
 }
-
-.btn-outline-secondary {
+.card-deck .btn-outline-secondary {
   color: #3d9af9;
-  background-color: #fff;
   border: 1px solid #3d9af9;
   right: 0;
 }
-.btn-outline-secondary:hover {
+.card-deck .btn-outline-secondary:hover {
   background-color: #3d9af9;
   border-color: #3d9af9;
   color: #fff;
 }
-
-.show > .btn-outline-secondary.dropdown-toggle {
+.card-deck .show > .btn-outline-secondary.dropdown-toggle {
   background-color: #3d9af9;
   color: #fff;
   border-color: #3d9af9;
+}
+
+#carouselExampleIndicators {
+  overflow: hidden;
+  background: transparent;
+  margin: auto;
+  height: 100%;
+}
+
+.carousel-indicators {
+  position: unset;
+}
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 0.75em;
+  height: 0.75em;
+  background-color: #3d9af9;
+}
+
+.carousel-inner {
+  width: 85%;
+  height: 75%;
+  margin: auto;
+}
+@media screen and (min-width: 760px) {
+  .carousel-inner {
+    width: 50%;
+    height: 85%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
